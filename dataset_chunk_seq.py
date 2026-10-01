@@ -20,7 +20,7 @@ from utils import normalize_batch, load_database
 
 def chunk_sequences(data_list, label_list, max_time_us=x*50000, max_len=500):
     """
-    Découpe les séquences de PDW de manière hybride pour coller au format d'entrée du traitement SPECTRA (x*50ms).
+    Découpe les séquences de PDW de manière hybride pour coller au format d'entrée du traitement actuel (x*50ms).
     La découpe se fait si on dépasse `max_time_us` OU si on atteint `max_len` éléments.
     """
     chunked_data = []
@@ -407,7 +407,7 @@ class PDWAugmenter:
 
 class LibraryBiasAugmenter:
     """
-    Générateur de n_views vues par ajout de biais probabiliste basé sur la bibliothèque radar.
+    Générateur de n_views vues par ajout de biais probabiliste basé sur la bibliothèque.
     L'objectif est de faire de la DATA AUGMENTATION en permettant au réseau d'apprendre des sous-modes non présents dans les données
     """
 
