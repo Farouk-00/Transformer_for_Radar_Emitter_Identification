@@ -1,5 +1,5 @@
-Projet issu du stage de recherche (02/04/2026 - 28/08/2026) de Foucault BERNARD (foucaultbernard2003@gmail.com) pour le traitement des ambigüités SPECTRA par IA.
-Une architecture de Transformer est développée pour identifier des PDW déjà désentrelacées, les données d'entraînement, de validation et de test ainsi que les poids finaux sont sur réseau secret.
+Projet issu du stage de recherche (02/04/2026 - 28/08/2026) de Foucault BERNARD (foucaultbernard2003@gmail.com) pour le traitement des ambigüités radar par IA.
+Une architecture de Transformer est développée pour identifier des PDW déjà désentrelacées.
 L'entraînement est adapté au rejet (classification open set).
 
 dataset_chunk_seq.py : Ce fichier contient les classes de traitement des données (chunking des séquences de PDW à la bonne taille, normalisation...)
